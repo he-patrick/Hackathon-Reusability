@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <title>Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+      
+      body, html {
+        height: 100%;
+        line-height: 1.8;
+      }
+      
+      /* Full height image header */
+      .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/HomePageImages/Nature2.jpg");
+        min-height: 100%;
+      }
+      
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+      .all-centered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        .page-padding{
+        padding-top: 10%;
+        padding-bottom: 23%;
+        font-size: 150%;
+      }
+      ol{
+        margin: auto;
+        width: 25%;
+        font-size: 120%;
+      }
+      </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="https://reusabilitytest.herokuapp.com/" class="w3-bar-item w3-button w3-wide">
+          <img src="/HomePageImages/EnvironmentLogo.jpg" width="40" height="inherit">&nbsp Trash to Toys</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="https://reusabilitytest.herokuapp.com/#about" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="/IdeasPages/IdeasPage.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJECTS</a>
+          <a href="https://reusabilitytest.herokuapp.com/LoginPage.html" class="w3-bar-item w3-button" id="quickstart-sign-in"><i class="fa fa-envelope"></i> LOGIN</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="https://reusabilitytest.herokuapp.com/#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="/IdeasPages/IdeasPage.html" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+      <a href="https://reusabilitytest.herokuapp.com/SignUp.html" onclick="w3_close()" class="w3-bar-item w3-button">Sign Up</a>
+      <a href="https://reusabilitytest.herokuapp.com/LoginPage.html" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+    </nav>
+    
+    <div class="w3-container w3-light-grey page-padding" id="page" style="min-height: 100vh">
+      <div name="Info">
+        <h2 class="w3-center" style="font-size: 200%">
+          Title
+        </h2>
+        <h3 class="w3-center" style="text-decoration: underline">
+          Materials
+        </h3>
+      </div>
+      <!--List of materials-->
+      <div name="listOfMaterials">
+        <ol style="font-size: 80%">
+          <li>
+            Water Bottle
+            <br>
+          </li>
+          <li>
+            Water Bottle
+            <br>
+          </li>
+          <li>
+            Water Bottle
+            <br>
+          </li>
+        </ol>
+      </div>
+      
+      <div name="image" class="all-centered">
+        <!--filler image-->
+        <img src="/HomePageImages/UNsdg12.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="450" height="300">
+      </div>
+      
+      <div name="description" style="font-size: 80%; padding: 10%">
+        <p>
+          In positive psychology, a flow state, also known colloquially as being in the zone, is the mental state in which a person performing some activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity. In essence, flow is characterized by the complete absorption in what one does, and a resulting transformation in one's sense of time. Named by the psychologist Mihály Csíkszentmihályi in 1975, the concept has been widely referred to across a variety of fields (and is particularly well recognized in occupational therapy), though the concept has been claimed to have existed for thousands of years under other names.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

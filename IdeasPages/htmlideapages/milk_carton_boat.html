@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <title>Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+      
+      body, html {
+        height: 100%;
+        line-height: 1.8;
+      }
+      
+      /* Full height image header */
+      .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/HomePageImages/Nature2.jpg");
+        min-height: 100%;
+      }
+      
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+      .all-centered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        .page-padding{
+        padding-top: 10%;
+        padding-bottom: 23%;
+        font-size: 150%;
+      }
+      ol{
+        margin: auto;
+        width: 25%;
+        font-size: 120%;
+      }
+      </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="https://reusabilitytest.herokuapp.com/" class="w3-bar-item w3-button w3-wide">
+          <img src="/HomePageImages/EnvironmentLogo.jpg" width="40" height="inherit">&nbsp Trash to Toys</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="https://reusabilitytest.herokuapp.com/#about" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="/IdeasPages/IdeasPage.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJECTS</a>
+          <a href="https://reusabilitytest.herokuapp.com/LoginPage.html" class="w3-bar-item w3-button" id="quickstart-sign-in"><i class="fa fa-envelope"></i> LOGIN</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="https://reusabilitytest.herokuapp.com/#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="/IdeasPages/IdeasPage.html" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+      <a href="https://reusabilitytest.herokuapp.com/SignUp.html" onclick="w3_close()" class="w3-bar-item w3-button">Sign Up</a>
+      <a href="https://reusabilitytest.herokuapp.com/LoginPage.html" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+    </nav>
+    
+    <div class="w3-container w3-light-grey page-padding" id="page" style="min-height: 100vh">
+      <div name="Info">
+        <h2 class="w3-center" style="font-size: 200%">
+            Milk Carton Pirate Ship
+        </h2>
+        <h3 class="w3-center" style="text-decoration: underline">
+          Materials
+        </h3>
+      </div>
+      <!--List of materials-->
+      <div name="listOfMaterials">
+        <ol style="font-size: 80%">
+          <li>
+            
+                An empty, rinsed out Milk Carton.
+                <br>
+                <li>
+                    An empty, rinsed out K-Cup.
+                    <br>
+                </li>
+                <li>
+                    A chopstick (or candy stick, sturdy straw, or twig).
+                    <br>
+                </li>
+
+                <li>
+                    Paper.
+                    <br>
+                </li>
+                
+                <li>
+                    Glue.
+                    <br>
+                </li>
+
+                <li>
+                    String.
+                    <br>
+                </li>
+
+                <li>
+                    Optional – markers or paint to decorate the ship. You can also use fabric or laminated paper to help sails stand up to some splashing!<br>
+                </li>
+          </li>
+          <li>
+            Scissors
+            <br>
+          </li>
+        </ol>
+      </div>
+      
+      <div name="image" class="all-centered">
+        <!--filler image-->
+        <img src="/IdeasPages/IdeaPageImages/milk_carton_boat.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="55%" height="300">
+      </div>
+      
+      <div name="description" style="font-size: 80%; padding: 10%">
+        <p>
+            Instructions:
+            <br>
+            Turn your carton on its side, creating a point at the front of what will be your ship. Cut the sides in a small slope, or into whatever shape you’d like your boat to have. Paint carton if you wish. <br>
+            Design and cut sails. Keep in mind the width of your boat carton. <br>
+            Glue your K-Cup down in the center of your milk carton.<br>
+            Cut a hole at the top and bottom of the sails and weave your chopstick or straw through the holes, to secure it.<br>
+            Decorate your boat! We went for a Pirate theme!<br>
+            
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

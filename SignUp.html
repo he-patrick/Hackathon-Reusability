@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <title>Sign Up</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  h1{
+    padding: 50px;
+    text-align: center;
+  }
+
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/HomePageImages/Nature2.jpg");
+    min-height: 100%;
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  .all-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup-padding{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 150%;
+  }
+  </style>
+  
+  <body>
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="/home.html" class="w3-bar-item w3-button w3-wide"><img src="HomePageImages/EnvironmentLogo.jpg" width="40" height="inherit"></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="LoginPage.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="SignUp.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> SIGNUP</a>
+    </nav>
+    
+    
+    <!--actual signup page info-->
+    <div class="w3-container w3-light-grey signup-padding" id="signup" style="min-height: 100vh">
+      <h3 class="w3-center">
+        Sign Up
+      </h3>
+      <div style="margin-top: 2%">
+        <form action='signupconnect.php' method='POST'">
+          <p class = "all-centered"><input class="w3-border" id="enteredusername" type="text" placeholder="Username" required name="Username" size="25%"></p>
+          <p class = "all-centered"><input class="w3-border" id="enteredemail" type="text" placeholder="Email" required name="Email" size="25%"></p>
+          <p class = "all-centered"><input class="w3-border" id="psw1" type="password" placeholder="Password" required name="Password" size = "25%"></p>
+          <p class = "all-centered" style = "font-size: 50%"><input type="checkbox" onclick="showPassword()">&#160&#160Show Password</p>
+          <p class = "all-centered">
+            <button class="w3-button w3-black" type="submit">
+              <i class="fa fa-paper-plane"></i> Sign Up
+            </button>
+          </p>
+        </form>
+        <p class = "all-centered" style = "font-size: 50%">
+          Already have an account?&#160&#160
+          <a href="https://reusabilitytest.herokuapp.com/LoginPage.html">
+            Log In
+          </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function showPassword(){
+    var x = document.getElementById("psw1");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+    var x = document.getElementById("psw2");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  
+  function createAccount(){
+    var firstPsw = document.getElementById("psw1").value;
+    var secondPsw = document.getElementById("psw2").value;
+    var email = document.getElementById("enteredemail").value;
+    var username = document.getElementById("enteredusername").value;
+    if (firstPsw == secondPsw){
+      
+    }else{
+      alert("Passwords do not match");
+    }
+  }
+</script>
+
+
